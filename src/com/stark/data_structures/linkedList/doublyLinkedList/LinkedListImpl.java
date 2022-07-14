@@ -4,7 +4,6 @@ import java.util.Iterator;
 
 public class LinkedListImpl<T> implements LinkedList<T>, Iterable<T>, DescendingIterator<T>{
 
-
     private Node<T> firstNode;
     private Node<T> lastNode;
     private int size = 0;
@@ -89,7 +88,7 @@ public class LinkedListImpl<T> implements LinkedList<T>, Iterable<T>, Descending
         Node<T> next;
         Node<T> prev;
 
-        public Node(T item, Node<T> next, Node<T> prev) {
+        public Node(T item, Node<T> prev, Node<T> next) {
             this.item = item;
             this.next = next;
             this.prev = prev;
